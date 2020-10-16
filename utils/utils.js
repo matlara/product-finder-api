@@ -21,7 +21,7 @@ function palindrome(str) {
 }
 
 function fiftyPercent(number) {
-    return number / 2;
+    return number * 0.5;
 }
 
 module.exports = { mergeArrays, palindrome, fiftyPercent };
