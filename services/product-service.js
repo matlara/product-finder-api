@@ -6,7 +6,7 @@ const getAllProduct = () => products;
 const getProductById = (id) => {
   const product = products.find((element) => element.id == id);
   if( product && utils.palindrome(id) ) {
-    product.price = utils.fiftyPercent(product.price);
+    product.newPrice = utils.fiftyPercent(product.price);
   }
   return product;
 }
@@ -20,7 +20,7 @@ const getProductByBrandDescription = (word) => {
 
   if( productsByBrandDescription.length > 0 && utils.palindrome(word) ) {
     productsByBrandDescription.forEach(element => {
-      element.price = utils.fiftyPercent(element.price);
+      element.newPrice = utils.fiftyPercent(element.price);
     });
   }
 

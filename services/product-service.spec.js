@@ -26,13 +26,15 @@ describe("product-service", () => {
       "brand": "rvblsml",
       "description": "goeyxg nbowu",
       "image": "www.lider.cl/catalogo/images/toysIcon.svg",
-      "price": 387861 //"original price": 775722
+      "price": 775722,
+      "newPrice": 387861
     }
 
     const p = getProductById("181");
 
     expect(p).toStrictEqual(expectedProduct);
-    expect(p.price).toBe(387861);
+    expect(p.price).toBe(expectedProduct.price);
+    expect(p.newPrice).toBe(expectedProduct.newPrice);
   });
 
   it("should return a list of product by brand or description that it is not palindrome", () => {
@@ -57,7 +59,8 @@ describe("product-service", () => {
       "brand": "dsasd",
       "description": "muqn qblmiklf",
       "image": "www.lider.cl/catalogo/images/furnitureIcon.svg",
-      "price": 32838 //"original price": 65676
+      "price": 65676,
+      "newPrice": 32838
     }
 
     const products = getProductByBrandDescription("dsasd");
@@ -65,6 +68,7 @@ describe("product-service", () => {
 
     expect(products.length).toBe(12);
     expect(p.price).toBe(expectedProduct.price);
+    expect(p.newPrice).toBe(expectedProduct.newPrice);
   });
 
 });
