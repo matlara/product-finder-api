@@ -10,6 +10,11 @@ La campaña consiste en que cada vez que un cliente busque con un palíndromo, t
 Se necesita una Aplicación Web que contenga un buscador y una sección de resultados para listar los productos encontrados desde una base de datos en mongo (https://github.com/walmartdigital/products-db). En caso de que la búsqueda sea un palíndromo se deberá retornar los productos con el descuento (50%) ya aplicado al precio.
 El equipo de negocio ha definido que cuando sea una búsqueda sobre los identificadores de productos se deberá retornar el resultado exacto, es decir, un producto. Mientras que para la marca y para la descripción de productos, basta con que la búsqueda sea de más de 3 caracteres y que estos estén incluidos en los campos ya mencionados (marca y descripción).
 
+## Tecnologias
+
+node
+nvm v12.0.0
+
 ## Instalación
 
 Usa el manejador de paquetes de nodejs [npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) para instalar las dependencias
